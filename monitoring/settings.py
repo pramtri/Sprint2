@@ -11,6 +11,7 @@ DATABASES = {
 ALLOWED_HOSTS = ["*",]  # para pruebas
 
 INSTALLED_APPS = [
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -18,3 +19,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'inventory',
 ]
+
+ROOT_URLCONF = 'monitoring.urls'
+
+WSGI_APPLICATION = 'monitoring.wsgi.application'
+ALLOWED_HOSTS = ['*']
