@@ -4,7 +4,7 @@ DATABASES = {
         "NAME": "monitoring_db",
         "USER": "monitoring_user",
         "PASSWORD": "isis2503",
-        "HOST": "172.31.29.123  ",
+        "HOST": "172.31.29.123",
         "PORT": "5432",
     }
 }
