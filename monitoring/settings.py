@@ -1,10 +1,10 @@
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "inventorydb",
-        "USER": "inventory",
-        "PASSWORD": "your-strong-pass",
-        "HOST": "DB_PRIVATE_IP",  # cámbiala por la IP privada de la EC2 de la DB
+        "NAME": "monitoring_db",
+        "USER": "monitoring_user",
+        "PASSWORD": "isis2503",
+        "HOST": "172.31.29.123  ",
         "PORT": "5432",
     }
 }
