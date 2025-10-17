@@ -4,7 +4,7 @@ DATABASES = {
         "NAME": "provesi_db",
         "USER": "provesi_user",
         "PASSWORD": "isis2503",
-        "HOST": "172.31.29.123",
+        "HOST": "provesi-db.c1ikg4aowpxo.us-east-1.rds.amazonaws.com",
         "PORT": "5432",
     }
 }
