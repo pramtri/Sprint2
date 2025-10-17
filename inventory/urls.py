@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import availability, health_check
+from .views import health_check, request_packaging
 
 urlpatterns = [
-    path("inventory/availability/", availability),
     path("health-check/", health_check),
+    path("orders/pack/", request_packaging), # NUEVO ENDPOINT
 ]

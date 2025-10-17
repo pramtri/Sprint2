@@ -10,3 +10,20 @@ class Product(models.Model):
     location = models.CharField(max_length=64, blank=True)
     warehouse = models.ForeignKey(Warehouse, on_delete=models.CASCADE, related_name="products")
     updated_at = models.DateTimeField(auto_now=True)
+
+# --- NUEVO MODELO ---
+class Order(models.Model):
+    STATUS_CHOICES = [
+        ('verified', 'Verificado'),
+        ('packing', 'Empacando'),
+        ('packed', 'Empacado por despachar'),
+    ]
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    # Usamos un ID único para referenciar el pedido fácilmente
+    order_id = models.CharField(max_length=64, unique=True, db_index=True)
+    status = models.CharField(max_length=32, choices=STATUS_CHOICES, default='verified')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Order {self.order_id} - {self.status}"
