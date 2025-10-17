@@ -5,7 +5,7 @@ import pika
 import json
 
 # --- Conexión a RabbitMQ (configúrala con las IPs de tus instancias) ---
-RABBITMQ_HOST = '18.212.241.240' # Reemplazar después
+RABBITMQ_HOST = '172.31.17.69' # Reemplazar después
 
 def get_rabbitmq_connection():
     credentials = pika.PlainCredentials('provesi_user', 'isis2503')
