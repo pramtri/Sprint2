@@ -5,7 +5,7 @@ import json
 import time
 import os
 
-RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost') # Usaremos variables de entorno
+RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost')
 
 def get_rabbitmq_connection():
     credentials = pika.PlainCredentials('provesi_user', 'isis2503')

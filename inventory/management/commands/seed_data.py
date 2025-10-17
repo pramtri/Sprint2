@@ -14,7 +14,7 @@ class Command(BaseCommand):
         num_products = options["products"]
         num_orders = options["orders"]
 
-        # --- Crear Bodega y Productos (como ya lo tenías) ---
+        # --- Crear Bodega y Productos ---
         self.stdout.write("Seeding products...")
         w, _ = Warehouse.objects.get_or_create(code="BOD-001")
         products_to_create = []
