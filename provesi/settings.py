@@ -1,8 +1,8 @@
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "monitoring_db",
-        "USER": "monitoring_user",
+        "NAME": "provesi_db",
+        "USER": "provesi_user",
         "PASSWORD": "isis2503",
         "HOST": "172.31.29.123",
         "PORT": "5432",
@@ -19,7 +19,7 @@ INSTALLED_APPS = [
     'inventory',
 ]
 
-ROOT_URLCONF = 'monitoring.urls'
+ROOT_URLCONF = 'provesi.urls'
 
-WSGI_APPLICATION = 'monitoring.wsgi.application'
+WSGI_APPLICATION = 'provesi.wsgi.application'
 ALLOWED_HOSTS = ['*']
